@@ -1,0 +1,183 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    background: linear-gradient(120deg, #000000, #1a1a1a, #000000);
+    background-size: 300% 300%;
+    animation: gradientMove 6s infinite alternate;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+.boxs{
+
+    
+    display: grid;
+    grid-template-columns: auto auto auto;
+    
+    align-content: center;
+    justify-content: center;
+    width: 380px;
+    grid-gap: 10px;
+}
+.grid-dot{
+     border: 1px solid black;
+     box-shadow:2px 2px 50px 10px rgb(255, 255, 255);
+     width: 100px;
+     height: 100px;
+     display: grid;
+     justify-items: center;
+     align-items: center;
+     grid-template-columns: repeat(3,1fr);
+     grid-template-rows: repeat(3,1fr);
+     border-radius: 10px;
+     background-color: #fff;
+     transition: 1.2s;
+}
+.grid-dot:hover{
+    transform: scale(1.2);
+}
+.dot{
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.dot1{
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    
+}
+.dot2-2{
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+.dot3{
+    grid-row: 3/4;
+}
+.dot3-3{
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.dot3-4{
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    grid-column: 3/4;
+}
+.dot4-5{
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    grid-column: 3/4;
+}
+.dot4-6{
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+.dot4-4{
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+.dot5-5{
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+.dot5-6{
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    grid-column: 3/4;
+    
+}
+.dot5-8{
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    
+    grid-row: 3/4;
+}
+.dot5-7{
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.dot6-6{
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.dot6-8{
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+.dot6-9{
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+.dot6-7{
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+.dot6-10{
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    grid-column: 3/4;
+}
